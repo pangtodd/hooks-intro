@@ -6,7 +6,8 @@ function Counter(){
 
   useEffect(()=> {
     console.log("EFFECT!");
-  });
+    document.title = counter;
+  }, [counter] );
 
   return (
     <React.Fragment>
